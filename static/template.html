@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>CORS Test</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<h1>CORS Labs</h1>
+	Easiest way to understand Cross-Origin-Resource-Sharing (CORS) is to try it out.<p>
+        On this page you can test all possible combinations of; website domain, script domain, backend domain and an optional CORS header. 
+	<h3>See dev console for test result!</h3>
+	Parameters for http://D.corslabs.com/html/X-Y-Z:<br>
+	<ul>
+		<li>D - Domain for website</li>
+		<li>X - Domain where Javascript is retrieved</li>
+		<li>Y - Domain for REST calls within .js</li>
+		<li>Z - Optional CORS header for which domain to allow requests. All for *</li>
+	</ul>
+	<script>console.log('Loading script from: http://{{scriptDomain}}.corslabs.com/script{{restDomain}}{{suffix}}.js');</script>
+	<script type="text/javascript" src="http://{{scriptDomain}}.corslabs.com/script{{restDomain}}{{suffix}}.js"></script>
+</body>
+</html>
